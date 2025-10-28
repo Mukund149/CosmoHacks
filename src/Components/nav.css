@@ -1,0 +1,224 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+    position: fixed;
+    z-index: 5;
+    color: white;
+    align-items: center;
+    /* background-color: black; */
+    /* height: ; */
+    /* border: 2px solid white; */
+    /* backdrop-filter: blur(20px); */
+    background-color: black;
+}
+.nav-right{
+    width: fit-content;
+    display: flex;
+    /* border: 2px solid white; */
+    gap: 2vw;
+    padding: 1vw;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    /* position: relative; */
+    /* border: 1px solid white; */
+    width: 2vw;
+}
+.nav svg{
+    position: relative;
+    z-index: 5;
+    /* color: ; */
+    cursor: pointer;
+    width: 100%;
+}
+.register{
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 0.8vw 1vw;
+    border-radius: 3vw;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    /* color: black; */
+    /* mix-blend-mode: difference; */
+}
+.register h3{
+    font-family: sans-serif;
+    font-size: 0.8vw;
+    mix-blend-mode: difference;
+}
+.nav-menu{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    /* border: 2px solid white; */
+    transform: translateX(100%);
+
+}
+.logo img{
+    width: 70%;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /* transform: translateX(); */
+    /* background-color: black; */
+}
+.layer1{
+    z-index: 2;
+    background-color: #A0AB99;
+}
+.layer2{
+    z-index: 3;
+    background-color: #C87755;
+}
+.layer3{
+    z-index: 4;
+    padding: 7vw 3vw;
+    background-color: white;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.register:hover .popup-layer{
+    scale: 1;
+    transition: ease 0.5s ;
+}
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5vw;
+}
+.nav-menu ul li{
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+.nav-menu ul li h1{
+    cursor: pointer;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+}
+.nav-menu ul li h1:hover{
+    color: #C87755;
+}
+
+.nav-menu ul li h1 span{
+    /* transform: translateY(100%); */
+    display: inline-block;
+}
+
+.contact{
+    width: 100%;
+}
+.contact ul svg{
+    color: black;
+    width: 1vw;
+}
+.contact ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.contact ul li {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1vw;
+}
+.contact ul li a{
+
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1vw;
+}
+
+.numbers ul{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.popup-layer{
+    border: 2px solid white;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background: white;
+    scale: 0;
+    border-radius: 100%;
+    transition: all ease 0.5;
+
+}
+
+
+@media(max-width:768px){
+    .register{
+        padding: 2vw 2vw;
+    }
+    .register h3{
+        font-size: 3.5vw;
+    }
+    .nav{
+        width: 8vw;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .nav-menu{
+        width: 100%;
+        padding-right: 4vw;
+    }
+
+    .nav-menu ul li h1{
+    cursor: pointer;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 10vw;
+    }
+
+    .nav-menu ul{
+        gap: 3vw;
+    }
+
+    .nav-right{
+        gap: 5vw;
+    }
+
+    .contact ul li{
+        font-size: 4vw;
+    }
+    .contact ul svg{
+        width: 5vw;
+    }
+    .contact ul li a{
+        font-size: 6vw;
+        /* font-weight: 100; */
+    }
+
+}
