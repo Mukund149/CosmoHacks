@@ -88,7 +88,7 @@ const About = ({isMobile}) => {
 
             <div ref={aboutRef} className="about">
                 <div className="prize-pool">
-                    <h1>100000+ Prize Pool</h1>
+                    <h1>1 Lakh+ Prize Pool</h1>
                 </div>
                 <div className="about-para">
                     <div className="para para1">
