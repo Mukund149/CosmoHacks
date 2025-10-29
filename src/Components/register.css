@@ -1,7 +1,7 @@
 .register-main{
     width: 100%;
-    min-height: 100vh;
-    background-color: #070707;
+    min-height: 100dvh;
+    background-color: #000;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -34,7 +34,7 @@
     /* cursor: pointer; */
     line-height:1;
     font-size: 12vw;
-    font-weight: 400;
+    font-weight: 500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     color: white;
     /* border: 1px solid black; */
@@ -59,6 +59,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 2vw;
+    flex-wrap: wrap;
 }
 .plan{
     /* border: 1px solid white; */
@@ -199,7 +200,7 @@
 
 @media(max-width:768px){
     .register-title h1{
-        font-size: 17vw;
+        font-size: 15vw;
     }
     .register-title{
         line-height: 0.85;
@@ -217,8 +218,9 @@
     }
     .register-title h1{
     /* cursor: pointer; */
-    font-size: 15vw;
-    font-weight: 400;
+    /* /* font-size: 15vw; */
+    font-size: clamp(8vw, 12vw, 15vw); 
+    font-weight: 500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     color: white;
     /* border: 1px solid black; */
@@ -238,6 +240,11 @@
         font-size: 2.8vw;
         font-weight: 100;
     }
+    .plan {
+    width: 80vw; /* ✅ larger and readable on phone */
+    padding: 4vw 3vw;
+    border-radius: 3vw;
+  }
     .register-container{
         gap: 10vw;
     }
