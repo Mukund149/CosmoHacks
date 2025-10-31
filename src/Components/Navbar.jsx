@@ -1,6 +1,10 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import '../Components/nav.css'
 import logo from '../img/logo.png'
+import gndu from '../img/gndu.webp'
+import gjcei from '../img/gjcei.webp'
+import cosmogen from '../img/cosmogen.webp'
+import black from '../img/black.jpg'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -35,6 +39,10 @@ const Navbar = ({homeRef, aboutRef, trackRef, sponsorRef, speakerRef, registerRe
     const layer3Ref = useRef()
 
     const navRef = useRef()
+
+    useGSAP(()=>{
+        
+    })
 
     useEffect(() => {
         var tl = gsap.timeline({
@@ -98,7 +106,7 @@ const Navbar = ({homeRef, aboutRef, trackRef, sponsorRef, speakerRef, registerRe
         <>
             <div className="navbar">
                 <div className="logo">
-                    <img src={logo} alt="" />
+                    <img src={black} alt="" />
                 </div>
                 <div className="nav-right">
                     <div onClick={()=> { setIsMenu(false), registerRef.current.scrollIntoView({ behavior:"smooth", duration:2 })}} className="register">

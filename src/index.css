@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "teko";
+  src: url('./fonts/Teko-Variable.ttf');
+}
+
 *{
   margin: 0;
   padding: 0;

@@ -128,8 +128,12 @@
 }
 
 @media(max-width:768px){
+    .speaker-main{
+        height: fit-content;
+    }
     .speaker-container{
         flex-direction: column;
+        height: 100vh;
     }
     .speaker-div{
         width: 80%;

@@ -92,10 +92,10 @@ const About = ({isMobile}) => {
                 </div>
                 <div className="about-para">
                     <div className="para para1">
-                        <b><i>CosmoHacks 2025</i></b> is a national weekend-long hackathon hosted at Guru Nanak Dev University, Amritsar, on November 6–7, 2025. Students from across India will collaborate to design and build innovative tech projects through two days of creativity, coding, and problem-solving.
+                        <b><i>CosmoHacks 2025</i></b> is a national level hackathon hosted at Guru Nanak Dev University, Amritsar, on November 6–7, 2025. Students from across India will collaborate to design and build innovative tech projects through two days of creativity, coding, and problem-solving.
                     </div>
                     <div className="para para2">
-                        Alongside the main hackathon, participants can enjoy <b><i>sponsor-led workshops, mentorship sessions, and fun mini-events</i></b> — making CosmoHacks 2025 an unforgettable experience of learning, innovation, and community.
+                        Alongside the main hackathon, participants can enjoy <b><i>workshops, tech-talk by influencers, and fun mini-events</i></b> — making CosmoHacks 2025 an unforgettable experience of learning, innovation, and community.
                     </div>
                 </div>
             </div>
